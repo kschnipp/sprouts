@@ -1,0 +1,503 @@
+@font:Tahoma, Arial, Sans serif;
+
+// ------------------------------------------------------ SIMPLE CLASS FUNCTIONS
+.colorize(@color,@bgcolor){
+	color: @color;
+	background: @bgcolor;	
+}
+
+.bgposition(@x, @y){
+	background-position: @x @y;
+}
+
+.bghoverbg(@x,@y,@hoverx,@hovery){
+	.bgposition(@x,@y);
+	&:hover{
+		.bgposition(@hoverx,@hovery);
+	}
+}
+
+.font(@px,@color){
+	font-family:@font;
+	font-size:@px;
+	color:@color;
+}
+
+.absposition(@x,@y){
+	position:absolute;
+	top:@y;
+	left:@x;
+}
+
+.wxh(@x, @y){
+	width: @x;
+	height: @y;
+}
+
+// ------------------------------------------------------ CSS
+
+body{
+	background:#c9ecd9;
+}
+
+.container{
+	.wxh(680px,960px);
+	margin:auto;
+}
+
+.hidden{
+	display: none;
+}
+
+#sproutLaunch{
+	background:url('img/sprouts_launch.png') no-repeat 50% 50%;
+}
+
+
+// ------------------------------------------------------ PROFILE
+
+#sproutProfile{
+	border:1px solid #B1E3D3;
+	background:#e3f7ec;
+}
+
+
+#profileContainer{
+	.wxh(100%,50%);
+}
+#gardenContainer{
+	.wxh(100%,50%);
+}
+#profileContainer .profileImg{
+	margin-top:50px;
+	margin-left:50px;
+	float:left;
+}
+#profileContainer .profileBlerb{
+	float:left;
+	margin-top:50px;
+	margin-left:20px;
+}
+#profileName{
+	.font(40px,#35957b);
+	display:block;
+}
+#profileDesc,#profileCity{
+	.font(30px,#65daba);
+	display:block;
+}
+.profileImg{
+	.wxh(224px,224px);
+	border:2px solid #ffffff;
+	box-shadow:0px 0px 5px #333333;	
+}
+.profile1{
+	background:url('img/profile1.png');
+}
+.profile2{
+	background:url('img/profile2.png');
+}
+.profile3{
+	background:url('img/profile3.png');
+}
+.profile4{
+	background:url('img/profile4.png');
+}
+.profile5{
+	background:url('img/profile5.png');
+}
+#garden0{
+	.wxh(300px,300px);
+	position:absolute;
+	margin-top:0px;
+	margin-left:190px;
+	margin-top:100px;
+	background:#8890da;
+	border-radius:200px;
+	z-index:100;
+}
+#garden0 span{
+	display:block;
+	text-transform:uppercase;
+	.font(40px,#4f58aa);
+	text-align:center;
+	margin-top:100px;
+}
+#garden1{
+	.wxh(50%,50%);
+	background:#65daba;
+	float:left;
+}
+#garden1 span{
+	padding:20px;
+	display:block;
+	text-transform:uppercase;
+	.font(40px,#35957b);
+}
+#garden2{
+	.wxh(50%,50%);
+	background:#65da99;
+	float:left;
+}
+#garden2 span{
+	.font(40px,#359560);
+	display:block;
+	text-transform:uppercase;
+	float:right;
+	padding:20px;
+	text-align:right;
+}
+#garden3{
+	.wxh(50%,50%);
+	background:#65d0da;
+	float:left;
+}
+#garden3 span{
+	.font(40px,#3a8f97);
+	display:block;
+	text-transform:uppercase;
+	padding:20px;
+	margin-top:100px;
+}
+#garden4{
+	.wxh(50%,50%);
+	background:#65bada;
+	float:left;
+}
+#garden4 span{
+	.font(40px,#4997b5);
+	display:block;
+	text-transform:uppercase;
+	padding:20px;
+	margin-top:100px;
+	text-align:right;
+	float:right;
+}
+
+
+#shareStoryAction,#postStoryAction,#seeImpactAction,#shareTypeMenu{
+	margin:auto;
+	width:80%;
+	height:50px;
+	padding:10px;
+	text-align:center;
+	background:#ffffff;
+	border-radius:5px;
+	border:1px solid #b1e3d3;
+	margin-top:40px;
+}
+#shareStoryAction,#postStoryAction,#seeImpactAction{
+	.font(35px,#65daba);
+	
+}
+
+// ------------------------------------------------------ SHARE
+
+#sproutShare{
+	border:1px solid #B1E3D3;
+	background:#e3f7ec;
+}
+
+.shareHeader{
+	padding:80px;	
+}
+
+.shareHeader>.profileImg{
+	.wxh(170px,170px);
+	background-size:170px 170px;
+	float:left;
+}
+.shareHeader>.shareDesc{
+	float:left;
+	.font(35px,#65daba);
+	width:320px;
+	margin-left:20px;
+}
+#shareText{
+	background:#ffffff;
+	border-radius:5px;
+	border:1px solid #b1e3d3;
+	margin-top:50px;
+	width:100%;
+	height:200px;
+	margin-top:50px;
+	padding:10px;
+	.font(20px,#666666);
+	margin-left:-10px;
+}
+#shareName{
+	color:#35957b !important;
+}
+// ------------------------------------------------------ POST
+
+#sproutPost{
+	border:1px solid #B1E3D3;
+	background:#e3f7ec;
+}
+#postLeaf{
+	.wxh(311px,299px);
+	margin:auto;
+	margin-top:100px;
+}
+
+.postleaf0{
+	background:url('img/postleaf0.png');
+}
+.postleaf1{
+	background:url('img/postleaf1.png');
+}
+.postleaf2{
+	background:url('img/postleaf2.png');
+}
+.postleaf3{
+	background:url('img/postleaf3.png');
+}
+.postleaf4{
+	background:url('img/postleaf4.png');
+}
+
+#postLeafType{
+	margin:auto;
+	width:400px;
+	margin-top:50px;
+	text-align:center;
+}
+.postleaftype0{
+	.font(40px,#4f58aa);	
+}
+.postleaftype1{
+	.font(40px,#35957b);	
+}
+.postleaftype2{
+	.font(40px,#359560);	
+}
+.postleaftype3{
+	.font(40px,#3a8f97);	
+}
+.postleaftype4{
+	.font(40px,#4997b5);	
+}
+// ------------------------------------------------------ POST
+#sproutFeed{
+	border:1px solid #B1E3D3;
+	background:#ffffff;
+}
+.sproutFeedTitle{
+	width:100%;
+	height:80px;
+	text-align:center;
+	padding-top:20px;
+	text-transform:uppercase;
+}
+.sproutFeedTitle0{
+	background:#8890da;
+	.font(40px,#4f58aa);
+}
+.sproutFeedTitle1{
+	background:#65daba;
+	.font(40px,#35957b);
+}
+.sproutFeedTitle2{
+	background:#65da99;
+	.font(40px,#359560);
+}
+.sproutFeedTitle3{
+	background:#65d0da;
+	.font(40px,#3a8f97);
+}
+.sproutFeedTitle4{
+	background:#65bada;
+	.font(40px,#3c88a4);
+}
+
+.feedDiv{
+	padding:20px;
+	min-height:117px;
+	border-bottom:1px solid #cccccc;
+}
+.myHeadline div{
+	float:left;
+	margin-right:10px;
+}
+.myHeadline>.profileImg{
+	.wxh(50px,50px);
+	background-size:50px 50px;
+	float:left;
+}
+.clearing{
+	clear:both;
+}
+.feedText{
+	padding-top:10px;
+	.font(20px,#666666);
+}
+.harrow{
+	background:url('img/harrow.png');
+	.wxh(44px,32px);
+	margin-top:12px;
+}
+.sprouted0{
+	background:#dee1fc;
+}
+.sprouted1{
+	background:#dcfaf2;
+}
+.sprouted2{
+	background:#cffbe2;
+}
+.sprouted3{
+	background:#baeff4;
+}
+.sprouted4{
+	background:#e4f5fb;
+}
+.sprout0,.sprout1,.sprout2,.sprout3,.sprout4{
+	position:absolute;
+	margin-left:70px;
+	margin-top:10px;
+}
+.sprout0{
+	.font(30px,#4f58aa);
+}
+.sprout1{
+	.font(30px,#35957b);
+}
+.sprout2{
+	.font(30px,#359560);
+}
+.sprout3{
+	.font(30px,#3a8f97);
+}
+.sprout4{
+	.font(30px,#3c88a4);
+}
+.growing{
+	position:absolute;
+	margin-left:180px;
+	margin-top:10px;
+	.font(30px,#65daba);
+	font-weight:bold;
+}
+
+// ------------------------------------------------------ LEAVES
+.leaflg{
+	.wxh(64px,60px);
+}
+.leaflg0{
+	background:url('img/leaflg0.png');
+}
+.leaflg1{
+	background:url('img/leaflg1.png');
+}
+.leaflg2{
+	background:url('img/leaflg2.png');
+}
+.leaflg3{
+	background:url('img/leaflg3.png');
+}
+.leaflg4{
+	background:url('img/leaflg4.png');
+}
+
+.leafCount{
+	position:absolute;
+	margin-left:30px;
+	margin-top:35px;
+	.font(15px,#333333);
+	border-radius:20px;
+	.wxh(20px,20px);
+	text-align:center;
+	background:#ffffff;
+}
+.leafCount0{
+	.font(15px,#4F58AA);
+}
+.leafCount1{
+	.font(15px,#35957B);
+}
+.leafCount2{
+	.font(15px,#359560);
+}
+.leafCount3{
+	.font(15px,#3A8F97);
+}
+.leafCount4{
+	.font(15px,#4997B5);
+}
+
+// ------------------------------------------------------ TOPBAR
+.topbar{
+	background:#333333;
+	width:100%;
+	height:70px;
+}
+
+.topbar div{
+	.font(30px,#ffffff);
+	margin-left:60px;
+	display:inline-block;
+	margin-top:15px;
+}
+
+// ------------------------------------------------------ SEARCH
+#sproutSearch{
+	background:#ffffff;
+	border:1px solid #B1E3D3;
+}
+#sproutSearch>.profileImg{
+	.wxh(170px,170px);
+	background-size:170px 170px;
+	float:left;
+	margin-left:40px;
+	margin-top:50px;
+}
+
+// ------------------------------------------------------ LEAVES!!!!!
+.gardenLeaf{
+	position:absolute;
+}
+.leafSize1{
+	width:32px;
+	height:30px;
+	background-size: 32px 30px !important;
+}
+.leafSize2{
+	width:64px;
+	height:60px;
+	background-size: 64px 60px !important;
+}
+.leafSize3{
+	width:100px;
+	height:96px;
+	background-size: 100px 96px !important;
+}
+.leafType0{
+	background:url('img/postleaf0.png')
+}
+.leafType1{
+	background:url('img/postleaf1.png')
+}
+.leafType2{
+	background:url('img/postleaf2.png')
+}
+.leafType3{
+	background:url('img/postleaf3.png')
+}
+.leafType4{
+	background:url('img/postleaf4.png')
+}
+.leafType0.newLeaf{
+	background:url('img/newleaf0.png');	
+}
+.leafType1.newLeaf{
+	background:url('img/newleaf1.png');	
+}
+.leafType2.newLeaf{
+	background:url('img/newleaf2.png');	
+}
+.leafType3.newLeaf{
+	background:url('img/newleaf3.png');	
+}
+.leafType4.newLeaf{
+	background:url('img/newleaf4.png');	
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			SPROUTS
+		</title>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="script/sproutjs.js"></script>
+
+		<LINK href="sproutstyles.css" rel="stylesheet" type="text/css"/>
+		
+	</head>
+	<body onload="sprouts.init()">
+		
+	
+		<!-- SPROUT LAUNCH-->
+		<div id="sproutLaunch" class="container"></div>
+	
+		<!-- SPROUT PROFILE-->
+		<div id="sproutProfile" class="container hidden">
+			
+			<div id="profileContainer">
+				<div class="profileImg"></div>
+				<div class="profileBlerb">
+					<span id="profileName"></span>
+					<span id="profileDesc"></span>
+					<span id="profileCity"></span>
+				</div>
+				
+				<br clear="all"/>
+				
+				<div id="shareStoryAction">share her story</div>
+			</div>
+			
+			<div id="gardenContainer">
+				<div id="garden0"><div id="gardenLeafContainer0"></div><span>Driving<br/>Force</span></div>
+				<div id="garden1"><div id="gardenLeafContainer1"></div><span>Community<br/>Roots</span></div>
+				<div id="garden2"><div id="gardenLeafContainer2"></div><span>Cross the<br/>Divide</span></div>
+				<div></div>
+				<div id="garden3"><div id="gardenLeafContainer3"></div><span>Bold<br/>Thinking</span></div>
+				<div id="garden4"><div id="gardenLeafContainer4"></div><span>Pay It<br/>Forward</span></div>
+			</div>
+		</div>
+	
+		<!-- SPROUT FEED-->
+		<div id="sproutFeed" class="container hidden"></div>	
+	
+	
+		<!-- SPROUT SHARE-->
+		<div id="sproutShare" class="container hidden">
+			
+			<div class="shareHeader">
+				<div class="profileImg"></div>
+				<div class="shareDesc">Share a story about how <span id="shareName"></span> is changing the world.</div>
+			</div>
+			
+			<br clear="all"/>
+			
+			<div id="shareTypeMenu">driving force</div>
+			
+			<div style="margin:auto;width:80%;">
+				<textarea id="shareText"></textarea>
+			</div>
+			
+			<div id="postStoryAction">share her story</div>			
+		</div>	
+	
+	
+		<!-- SPROUT POST-->
+		<div id="sproutPost" class="container hidden">
+			
+			<div id="postLeaf"></div>
+
+			<div id="postLeafType"></div>
+			
+			<div id="seeImpactAction">see the impact</div>	
+		</div>	
+		
+		<!-- SPROUT SEARCH-->
+		<div id="sproutSearch" class="container hidden">
+			<div class="profileImg profile1" id="search1"></div>
+			<div class="profileImg profile2" id="search2"></div>
+			<div class="profileImg profile3" id="search3"></div>
+			<div class="profileImg profile4" id="search4"></div>
+			<div class="profileImg profile5" id="search5"></div>
+		</div>
+		
+	</body>
+</html>
